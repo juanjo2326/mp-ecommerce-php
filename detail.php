@@ -14,13 +14,13 @@ $item = new MercadoPago\Item();
 $item->id = 1234;
 $item->title = $_POST['title'];
 $item->description = '​Dispositivo móvil de Tienda e-commerce';
-$item->picture_url = 'https://juanjo23-mp-commerce-php.herokuapp.com'.$_POST['img'];
+$item->picture_url = 'https://juanjo232-mp-commerce-php.herokuapp.com'.$_POST['img'];
 $item->quantity = $_POST['unit'];
 $item->unit_price = $_POST['price'];
 $preference->items = array($item);
 
 // Número de orden del pedido con correo
-$preference->external_reference = 'juanjo23gallardo@gmail.com';
+$preference->external_reference = 'juanjo2326gs@gmail.com';
 
 // Datos del comprador
 $payer = new MercadoPago\Payer();
@@ -53,13 +53,13 @@ $preference->payment_methods = array(
 
 // Páginas de retorno (back_url)
 $preference->back_urls = array(
-    "success" => "https://juanjo23-mp-commerce-php.herokuapp.com/success.php",
-    "failure" => "https://juanjo23-mp-commerce-php.herokuapp.com/failure.php",
-    "pending" => "https://juanjo23-mp-commerce-php.herokuapp.com/pending.php"
+    "success" => "https://juanjo232-mp-commerce-php.herokuapp.com/success.php",
+    "failure" => "https://juanjo232-mp-commerce-php.herokuapp.com/failure.php",
+    "pending" => "https://juanjo232-mp-commerce-php.herokuapp.com/pending.php"
 );
 $preference->auto_return = "approved";
 
-$preference->notification_url = "https://juanjo23-mp-commerce-php.herokuapp.com/notificacion.php?source_news=webhooks";
+$preference->notification_url = "https://juanjo232-mp-commerce-php.herokuapp.com/notificacion.php?source_news=webhooks";
 $preference->save();
 ?>
 <!DOCTYPE html>
