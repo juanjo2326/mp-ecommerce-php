@@ -1,0 +1,12 @@
+{
+    "name": "juanj/mp-ecommerce-php",
+    "authors": [
+        {
+            "name": "juanjo23",
+            "email": "juanjo23gallardo@gmail.com"
+        }
+    ],
+    "require": {
+        "mercadopago/dx-php": "^1.10"
+    }
+}
